@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d1d1d1;
+}
+.container {
+  background-color: white;
+  max-width: 390px;
+  height: 700px;
+  margin: 10px auto auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.header {
+  background-image: url(https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb);
+  background-position: 50%;
+  width: 100%;
+  height: 130px;
+  padding: 10px 20px;
+}
+.btn-header {
+  position: absolute;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-name {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.subprofile-name {
+  font-size: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.search-box {
+  border-radius: 5px;
+  padding-left: 10px;
+  border: none;
+  height: 32px;
+  width: 100%;
+  outline: none;
+  margin-top: 10px;
+}
+input[type="text"]:focus {
+  border: none;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+.content-box {
+  background-color: blueviolet;
+  width: 95%;
+}
+.content-list {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  padding: 0;
+  margin: 0;
+  height: 560px;
+  overflow: scroll;
+  width: 95%;
+  margin: -5px auto auto;
+  background-color: white;
+}
+.content-list > ul {
+  margin: 16px 10px;
+  padding: 0;
+}
+.content-list > ul > li {
+  list-style-type: none;
+}
+.user-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.user-img {
+  display: flex;
+  justify-content: center;
+
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+.user-img > img {
+  border-radius: 50%;
+}
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.user-email {
+  color: #878787;
+  font-size: 12px;
+  font-weight: lighter;
+}
+li > hr {
+  border: 0;
+  border-bottom: 0.5px solid #e3e3e3;
+  height: 0;
+}
