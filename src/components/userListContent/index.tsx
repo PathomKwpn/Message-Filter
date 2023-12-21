@@ -1,9 +1,9 @@
-const UserList = ({ showData }) => {
+const UserList = ({ showData }:any) => {
   return (
     <div className="content">
       <div className="content-list">
         <ul>
-          {showData.map((user) => {
+          {showData.map((user: any) => {
             return (
               <li key={user.id}>
                 <div>

@@ -1,4 +1,5 @@
 import "./App.css";
+// import UserList from "./components/userListContent";
 import { useState, useEffect } from "react";
 //mock data
 import userData from "./useData";
@@ -18,8 +19,11 @@ function App() {
         .toLowerCase()
         .includes(searchKey.toLocaleLowerCase());
     });
+    console.log(newData); // 
+    console.log(searchKey); //GG
+
     setShowData(newData);
-  }, [searchKey]);
+  }, [searchKey]);// ถ้า Search key มีการเปลี่ยนแปลง
 
   return (
     <div className="container">
